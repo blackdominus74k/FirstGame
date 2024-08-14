@@ -1,0 +1,74 @@
+body{
+
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: #FFFF;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222;
+}
+h1{
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+  color: #FFFF;
+}
+#choices{
+  font-family: Arial, sans-serif;
+  color: #FFFF;
+  margin-bottom: 30px;
+}
+#choices button{
+  font-size: 30px;
+  border-radius: 250px;
+  width: 100px;
+  height: 100px;
+  background-color: hsl(200, 100%, 50%)
+}
+#playerDisplay{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+#computerDisplay{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+#resultDisplay{
+  font-size: 50px;
+  margin-bottom: 0 10px;
+}
+
+#lossesDisplay{
+  color: #FF0000;
+  font-size: 20px;
+}
+
+#winsDisplay{
+  color: #00FF00;
+  font-size: 20px;
+}
+
+.greenText{
+  color: #00FF00;
+}
+
+.redText{
+  color: #FF0000;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.button-wrapper {
+  text-align: center;
+}
+
+.button-text {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #FFFF;
+}
