@@ -15,6 +15,13 @@ function playGame(playerChoice){
   
   if(playerChoice === computerChoice){
     result = "IT'S A TIE!"
+    playerDisplay.textContent = `PLAYER: ${playerChoice}`;
+    computerDisplay.textContent = `COMPUTER: ${computerChoice}`;
+    resultDisplay.classList.remove("redText")
+    resultDisplay.classList.remove("greenText")
+    resultDisplay.classList.add("tieText")
+    resultDisplay.textContent = result;
+    return;
   }
   else{
       switch(playerChoice){
@@ -39,6 +46,7 @@ function playGame(playerChoice){
       case "YOU WIN!":
       wins += 1;
        resultDisplay.classList.remove("redText")
+       resultDisplay.classList.remove("tieText")
       resultDisplay.classList.add("greenText")
 
 winsDisplay.textContent = `Wins: ${wins}`
@@ -46,6 +54,7 @@ winsDisplay.textContent = `Wins: ${wins}`
       case "YOU LOSE!":
       losses += 1;
       resultDisplay.classList.remove("greenText")
+      resultDisplay.classList.remove("tieText")
       resultDisplay.classList.add("redText")
       
 lossesDisplay.textContent = `LOSSES: ${losses}`;
